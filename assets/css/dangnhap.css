@@ -1,0 +1,53 @@
+/* File: dangnhap.css
+student: LÊ NGOC VI, vib1906610@student.ctu.edu.vn */
+.home__title {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home {
+    height: 100%;
+}
+
+.home__background {
+    background: url(../images/yHp.gif);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container h1 {
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.social-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.social-container a {
+    text-align: center;
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    display: inline-flex;
+   justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+
+}
+form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+}

@@ -1,0 +1,325 @@
+/* File: gioithieu.css
+student: LÊ NGOC VI, vib1906610@student.ctu.edu.vn */
+
+.home {
+    height: 100%;
+}
+
+.home__title {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%); /*Căn giữa phần tử theo chiều ngang của 1 thẻ */
+}
+.home__title h1 {
+    font-size: 72px;
+    color: #fff;
+    text-transform: uppercase; /*Chữ hoa */
+    font-weight: 800;
+}
+
+
+.home__background {
+    background: url(../images/beachscenebackground.gif); 
+    background-repeat: no-repeat; /*Không lặp lại hình ảnh */
+    background-position: bottom center; /* vị trí đặt hình ảnh ở giữa bên dưới */
+    background-attachment: fixed; /*Hình nền được cố định với khung hình */
+    background-size: cover; /*Tự chia tỷ lệ tới kích thước lớn nhất của chiều rộng hoặc chiều cao để phù hợp với vùng nội dung. */
+}
+
+.intro {
+    background-color: #FFF0F5;
+    padding: 90px 15px 90px 15px;
+}
+
+.intro__image img {
+    max-width: 100%;
+}
+
+.intro__content {
+    position: relative; /*Vị trị nội dung là tuyệt đối */
+}
+
+.intro__content--title h1 {  /*Nội dung tiêu đề */
+    color: black;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.intro__content--text { /*Nội dung văn bản */
+    font-weight: 600;
+    color: gray;
+    margin-top: 60px;
+    line-height: 2.5; /*Độ rộng giữa các dòng */
+    text-align: justify; /*Mô tả nội dung của các dòng có chiều rộng bằng nhau*/
+    padding-bottom: 40px; /*Khoảng cách đáy */
+}
+
+.tour__item--btn { /*Nút tìm hiểu thêm */
+    position: relative;
+    left: 100px;
+    bottom: 0;
+    display: inline-block; /*được sử dụng chủ yếu cho việc hiển thị danh sách điều hướng theo chiều ngang */
+    height: 55px;
+    border-radius: 27px; /*Làm tròn các góc của cạnh ngoài viền */
+    overflow: hidden; /*Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi.*/
+}
+/* Thống kê */
+
+.statistics {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.statistics__title h1 { /*tiêu đề */
+    color: black;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.statistics__text { /*Nội dung */
+    margin: 20px 0;
+    padding: 0 50px;
+    line-height: 1.5; /*khoảng cách cách dòng */
+}
+
+.statistics__years { /*thống kê tình hình năm */
+    padding: 0 100px; 
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFA500;
+}
+
+.statistics__years .row { /* Thống kê theo từng dòng */
+    text-align: left; /* Sắp nội dung theo chiều ngang nằm về bên trái, đây là dạng mặc định. */
+}
+
+.text-right { /* */
+    text-align: right !important;  /*ưu tiên sắp nội dung bên phải */
+}
+
+.statistics__content { /* */
+    padding: 0 30px; 
+}
+
+.statistics__content .row { /* */
+    justify-content: center; /* giá trị này sẽ căn giữa các thành phần trong flexbox */
+    align-items: center; /* điều khiển phần tử con ra giữa*/
+}
+
+.statistics__content__item { /*icon thống kê */
+    display: flex; /*hiển thị các icon linh hoạt hơn */
+    justify-content: center; 
+    align-items: center;
+    padding: 25px 0;
+}
+
+.content__item__stats { /*Nội dung trong mục thống kê */
+    padding: 0 10px;
+}
+
+.statistics__item__text { /*Nội dung trong mục thống kê */
+    margin: 0 10px;
+}
+
+.stats__number { /*số liệu thống kê */
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+.stats__type { /*Phân loại thống kê */
+    font-size: 14px;
+    font-weight: 600;
+    color: #929191;
+}
+
+.stats__bar { /*Thanh thống kê */
+    width: 100%;
+    position: relative;
+}
+
+.stats__bar__perc--left { /*Định dang thanh thống kê bên trái */
+    height: 3px;
+    background-color: #ccc;
+    float: left;
+}
+
+.stats__bar__perc--right { /*Định dang thanh thống kê bên phải */
+    height: 3px;
+    float: right
+}
+
+.stats__bar__value { /* Nội dung thanh thống kê*/
+    color: black;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    font-weight: 600;
+}
+
+/* khuyến mãi tour đà nẵng */
+
+.sale__container__content { /*Nội dung tour khuyến mãi */
+    background: url('../images/bai_bien.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /*vị trị hình ảnh ở giữa */
+    height: 295px;
+    position: relative;
+    margin: 0 15px;
+    margin-bottom: 90px;
+}
+
+.sale__container__content__body {
+    color: #fff;
+    position: absolute; /*Dùng để thiết lập vị trí của một phần tử nhưng nó sẽ luôn nằm trong một phần tử mẹ đang là relative */
+    left: 20%;
+    top: 20%;
+}
+
+.sale__container__body--title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.sale__container__body--price {
+    font-size: 18px;
+    margin-bottom: 35px;
+    margin-left: 5px;
+}
+
+.sale__container__body--price span { 
+    font-weight: 700;
+}
+
+.milestones { /*Côt mốc quan trọng */
+    padding-bottom: 90px;
+}
+
+.milestones__container .row {
+    justify-content: space-around; /*Giá trị này cũng làm cho các khoảng cách giữa các phần tử bằng nhau, tuy nhiên nó cũng thay đổi cả vị trí của hai phần tử đầu cuối */
+    align-items: flex-end;
+}
+
+.milestones__container__item {
+    text-align: center;
+    width: 25%;
+}
+
+.milestones__container__item--stat { /* */
+    font-size: 48px;
+    font-weight: 600;
+    color: black;
+    margin-top: 15px;
+}
+
+.milestones__container__item--text { /* */
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+/*Responsive giới thiệu */
+@media (max-width: 1023px) {  /*dành cho desktop */
+    .wide.custom {
+        max-width: 984px !important;
+        width: auto;
+    }
+    .row {
+        margin: 0;
+    }
+}
+/*Máy tính bảng */
+@media (max-width: 740px) {
+    .home__title h1 {
+        font-size: 48px;
+        white-space: nowrap; /*Thu hẹp khoảng cách bình thường nhưng ngăn chặn ngắt dòng */
+    } 
+    .intro {
+        background-color: #f6f9fb;
+        padding: 90px 15px 90px 15px;
+    }
+    .intro__content--title h1 {
+        font-size: 25px;
+    }
+    .intro .tour__item--btn {
+        height: 45px
+    }
+    .intro .tour__item--btn a {
+        line-height: 45px
+    }
+    .statistics__content .row {
+        padding: 0 10px;
+    }
+    .padding {
+        padding: 0 25px;
+    }
+    .sale__container__body--title {
+        font-size: 40px;
+    }
+    .sale__container__content__body .tour__item--btn {
+        height: 42px;
+    }
+    .sale__container__content__body .tour__item--btn a {
+        line-height: 42px;
+    }
+    .milestones__container__item {
+        width: 50%;
+    }
+    .margin-top {
+        margin-top: 50px;
+    }
+   
+}
+/*điệnn thoại */
+@media (max-width: 479px) {
+    .home__background {
+        background-attachment: scroll; /*Hình nền cố định không bị cuộn theo */
+    }
+    .home__title {
+        top: 60%;
+    }
+    .home__title h1 {
+        font-size: 30px;
+        white-space: nowrap;
+    }
+    .header__about-us h1 {
+        font-size: 32px;
+    }
+    .statistics {
+        padding: 50px 0;
+    }
+   
+    .statistics__content .row {
+        justify-content: center;
+        align-items: center;
+    }
+    .statistics__title h1 {
+        font-size: 27px;
+    }
+    .statistics__years {
+        margin-top: 20px;
+    }
+    .padding {
+        padding: 0 42px;
+    }
+    .stats__number {
+        font-size: 20px;
+    }
+    .stats__type {
+        font-size: 13px;
+    }
+    .sale__container__body--title {
+        font-size: 32px;
+    }
+    .milestones__container__item {
+        width: 100%;
+    }
+    .margin-top-mb {
+        margin-top: 50px;
+    }
+}

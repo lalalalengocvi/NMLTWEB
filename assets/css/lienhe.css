@@ -1,0 +1,123 @@
+/* File tintuc.css: định dạng các phần tử trong lienhe.html, thay đổi bố cục, màu sắc, kích cỡ hình ảnh, màu nền, hiệu ứng,..phong chữ, size chữ.
+     student: Vo Huynh Duc, ducb1906313@student.ctu.edu.vn */
+
+/* thiết lập backround cuộn hoặc cố định*/
+.home__background {
+    background: url(../images/hinhphuquoc.png);
+    background-attachment: fixed; /* Nền được cố định với khung hình*/
+    background-size: cover; /*ảnh được co để vừa với phần tử chứa*/
+    background-position: center center;/*hình nền sẽ được nằm ở giữa phần tử theo chiều ngang và chiều dọc*/
+}
+
+.home__title {
+    position: absolute;/* định vị vị trí tuyệt đối */
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);/* di chuyển phần tiêu đề Liên hệ ở giữa */
+}
+/* bóng của tiêu đề Liên hệ*/
+.home__title h3 {
+    text-shadow: 2px 2px 7px rgb(145, 145, 145);
+}
+
+.contact__container {
+    height: 100%;
+    padding: 70px 0;
+
+}
+
+.contact__container .info {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* phần canh lề */
+.contact__container__info {
+    margin-top: 20px;/*Canh lề bên trên cho các dòng cột trái*/
+    display: flex;/*sắp xếp, bố cục các thành phần khối*/
+    align-items: center;
+}
+.contact__container__info span {
+    padding-left: 20px;
+    color: black;
+    font-weight: 900;/* độ đậm nhạt của chữ */
+    font-size: 20px;/* kích thước chữ */
+    cursor: pointer;/* thay đổi con chuột khi trỏ đến */
+    transition: all .3s ease;/* hiệu ứng chuyển trong 3 giây*/
+}
+/* màu khi chuột trỏ vào */
+.contact__container__info span:hover {
+    color: #FFA500;
+}
+
+.contact__container__info--img img {
+    max-width: 25px;/*Đặt chiều rộng tối đa của phần tử*/
+    display: block;/* các item được xuống dòng*/
+    cursor: pointer;/* thay đổi con chuột khi trỏ đến */
+}
+/* thêm khoản trống ở phía trên thành phần */
+.contact__container__content {
+    margin-top: 48px;
+}
+
+.container .contact__form {
+    position: relative;
+    padding: 74px 48px 88px 48px;
+    border-radius: 7px;
+}
+/* bố cục phần tiêu đề bảng nhập form Liên lạc với chúng tôi */
+.container .contact__container__form--title h3 {
+    font-size: 30px; /* kích thước chữ */
+    font-weight: 700;/* độ đậm nhạt*/
+    color: black; /* màu sắc tiêu đề */
+    text-transform: uppercase; /* các ký tự viết hoa cho văn bản*/
+    text-align: center;
+}
+
+/*/*Responsive*/ 
+
+@media (max-width: 1023px) {
+    .contact__container {
+        padding: 50px 10px;
+    }
+    .contact__form {
+        padding: 0 30px;
+    }
+    .contact__about {
+        padding-right: 32px;
+    }
+    .contact__about--social li {
+        width: 32px;
+        height: 32px;
+    }
+    .contact__about--social li i {
+        font-size: 15px;
+    }
+    .contact__container__content {
+        margin-top: 40px;
+    }
+}
+/*Máy tính bảng */
+@media (max-width: 739px) {
+    .contact__form {
+        padding: 0 20px;
+    }
+    .contact__container {
+        padding: 20px 0;
+    }
+    .padding {
+        padding: 0 20px;
+    }
+    .contact__about--logo {
+        margin-top: 15px;
+    }
+}
+/*điệnn thoại */
+@media (max-width: 479px) {
+    .contact__form {
+        padding: 0 10px;
+    }
+    .contact__container__form {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

@@ -1,0 +1,249 @@
+/* File tintuc.css: định dạng các phần tử trong tintuc.html, thay đổi bố cục, màu sắc, kích cỡ hình ảnh, màu nền, hiệu ứng,..
+     student: Vo Huynh Duc, ducb1906313@student.ctu.edu.vn */
+     .home__title {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .home__title h1 {
+        font-size: 72px;
+        color: #fff;  /* màu chữ */
+        text-transform: uppercase; /* chữ in hoa */
+        font-weight: 800; /* độ đậm chữ */
+    }
+    
+    .home {
+        height: 100%;
+    }
+    
+    .home__background {
+        background: url(../images/bien.gif);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    /* phần nội dung trang */
+    .blog {
+        padding: 70px 0; /* khoản trống viền*/
+    }
+    /* Định vị trí tuyệt đối cho các thành phần */
+    .blog__container {
+        position: relative;
+    }
+    /* kích thước ảnh*/
+    .blog__container img {
+        width: 100%;
+    }
+    
+    .blog__container__post {
+        position: relative;
+    }
+    /* chèn chữ lên ảnh */
+    .blog__container__post--time {
+        color: #fff;
+        display: flex; /*căn chỉnh vị trí, khoảng cách*/
+        justify-content: center;/* căn chỉnh phần tử ở vị trí trung tâm*/
+        align-items: center; /* căn chỉnh từng mục ở vị trí trung tâm */
+        text-align: center; /* căn chỉnh chữ ở giữa*/
+        flex-direction: column;/*flex item được sắp xếp theo chiều dọc, từ trên xuống dưới */
+        background-color: #FFA500;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%; /* bo tròn*/
+        position: absolute; /*Position dùng để sắp xếp vị trí cho một phần tử, absolute canh chỉnh tọa độ */
+        left: 3%; /* canh chỉnh vị trí*/
+        top: 2%; /* canh chỉnh vị trí*/
+    }
+    /* canh lề trái các đoạn */
+    .blog__container__sidebar {
+        padding-left: 20px;
+    }
+    /* tìm kiếm */
+    .blog__container__sidebar input {
+        width: 95%;
+        height: 44px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-image: initial;
+        border-bottom: 2px solid rgb(230, 231, 244);
+        outline: none;
+    }
+    
+    .blog__container__sidebar i {
+        font-size: 20px;
+        color: #FFA500;
+        position: absolute;
+        right: 25px; /* canh lề phải */
+        top: 20px; /* canh lề trên */
+        transform: rotate(90deg); /* xoay 90 độ */
+        cursor: pointer; /* thay đổi con chuột khi trỏ đến */
+        transition: all .3s linear; /* hiệu ứng chuyển trong 3 giây*/
+    }
+    
+    .blog__container__sidebar i:hover {
+        color: rgb(104, 101, 101);
+    }
+    /* canh lề trên mục kho lưu trữ */
+    .container__sidebar--year {
+        margin-top: 50px;
+    }
+    
+    .container__sidebar--year span {
+        font-size: 30px;
+        color: black;
+        font-weight: 700;/* độ đậm nhạt cho tiêu đề khu lưu trữ */
+    }
+    
+    .container__sidebar--year ul {
+        margin-top: 1px;
+    }
+    
+    .container__sidebar--year ul li {
+        list-style: none;
+        font-weight:  500; /* nét đậm */
+        padding: 10px 0;
+        color:rgb(104, 101, 101) /* khoảng cách các dòng */
+    }
+    /* khoảng cách hàng trên và hàng dưới*/
+    .margin-top {
+        margin-top: 35px;
+    }
+    /* chỉnh màu phần đầu .blog__container__post */
+    .blog__container__post a {
+        color: rgb(58, 77, 241);
+    }
+    
+    .blog__container__post ul li {
+        list-style: none;
+        display: inline-block;
+        font-weight: 600;
+        transition: all .3s linear;
+    }
+    
+    .blog__container__post li a:hover {
+        color: black;
+    }
+    
+    .blog__container__post--title {
+        display: block;
+        font-size: 24px;
+        color: black !important;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    /* canh lề*/
+    .blog__container__post p {
+        line-height: 2;/* chiều cao giữa các dòng*/
+        text-align: justify;/* Sắp xếp nội dung cho các dòng có chiều rộng bằng nhau*/
+    }
+    
+    .blog__container__post--btn {
+        color: rgb(104, 101, 101) !important;
+        display: block;
+        margin-top: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .container__sidebar--list span {
+        display: block;
+        font-size: 25px;
+        color: black;
+        font-weight: 700;/* độ đậm nhạt cho tiêu đề thể loại */
+        margin-bottom: 25px;
+    }
+    
+    .container__sidebar--list ul li {
+        list-style: none;
+        padding: 10px 0; /* khoảng cách giữa các ul li*/
+    }
+    /* bố cục cho cái ul, li */
+    .container__sidebar--list li a {
+        color: rgb(133, 110, 110);
+        font-weight: 600; /* độ đậm nhạt cho chữ*/
+    }
+    
+    
+    .container__sidebar--list-img {
+        display: grid; /*bố cục lưới*/
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+    }
+    
+    @media (max-width: 1239px) {
+        .container__sidebar__content--latest {
+            margin-bottom: 22px;
+        }
+        .container__sidebar__content--latest img {
+            width: 63px;
+            height: 63px;
+        }
+    }
+    /*Responsive giới thiệu */
+    @media (max-width: 1023px) {
+        .container__sidebar__content--latest {
+            margin-bottom: 17px;
+        }
+        .container__sidebar__content--latest img {
+            width: 62px;
+            height: 62px;
+        }
+    
+        .blog__container__post {
+            padding: 0 15px;
+        }
+        .blog__container__sidebar {
+            padding: 0 10px;
+        }
+    }
+    /*Máy tính bảng */
+    @media (max-width: 740px) {
+        .home__title h1 {
+            font-size: 60px;
+            text-align: center;
+        }
+        .top {
+            margin-top: 20px;
+        }
+        .blog__container__post--time {
+            width: 75px;
+            height: 75px;
+            left: 5%;
+            top: 4%;
+        }
+        .blog__container__post--time span:first-child {
+            font-size: 26px;
+        }
+        .blog__container__post--time span:last-child {
+            font-size: 11px;
+        }
+    }
+    /* Điện thoại*/
+    @media (max-width: 479px) {
+        .home__title {
+            top: 35%;
+        }
+        .home__title h1 {
+            font-size: 42px;
+        }
+        .blog__container__post--time {
+            width: 60px;
+            height: 60px;
+            left: 7%;
+            top: 6%;
+        }
+        .blog__container__post--time span:first-child {
+            font-size: 24px;
+        }
+        .blog__container__post--time span:last-child {
+            font-size: 10px;
+        }
+    }
+    
+    

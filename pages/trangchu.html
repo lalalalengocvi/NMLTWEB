@@ -1,0 +1,456 @@
+<!--file: trangchu.html
+student: Nguyen Van Phuong,  phuongb1909973@stuent.ctu.edu.vn-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/grid.css"> <!--CSS cho bootstrap-->
+    <link rel="stylesheet" href="../assets/css/base.css"> <!--CSS cho định danh cả trang web, header, footer--> 
+    <link rel="stylesheet" href="../assets/css/style.css"> <!--phong cách trang web-->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/trangchu.css">
+</head>
+<body>
+    <header class="header"></header>
+    <main>
+        <div class="main__image">
+            <div class="main__image__content">
+                <h1>KHÁM PHÁ</h1>
+                <h1>Việt Nam</h1>
+            </div>
+        <div class="main__image__explore">
+            <h1>Trải nghiệm ngay...</h1>
+        </div>
+    </div>
+<!--Phần main__container-1  bao gồm 2 phần: Phần tìm kiếm các chuyến đi và những chuýen đi tốt nhất-->
+        <div class="main__container-1">
+            <!--Phần tìm kiếm các chuyến đi-->
+               <form action="" class="main__container-1__form">
+            <div class="main__container-1__item1">
+                <div class="main__container-1__item1__p1">
+                    <p>Nơi đến</p>
+                    <input type="text" placeholder="Nhập nơi bạn muốn đến..." required>
+                </div>
+                <div class="main__container-1__item1__p2">
+                    <p>Ngày đến</p>
+                    <input type="date" required>
+                </div>
+                <div class="main__container-1__item1__p3">
+                    <p>Ngày đi</p>
+                    <input type="date" required>
+                </div>
+                <div class="main__container-1__item1__p4">
+                    <p>Người lớn</p>
+                    <select name="" id="">
+                        <option value="">01</option>
+                        <option value="">02</option>
+                        <option value="">03</option>
+                    </select>
+                </div>
+                <div class="main__container-1__item1__p5">
+                    <p>Trẻ em</p>
+                   <select name="" id="">
+                       <option value="">0</option>
+                       <option value="">01</option>
+                       <option value="">02</option>
+                   </select>
+                </div>
+                <div class="main__container-1__item1__p6">
+                    <p><input type="submit" value="TÌM KIẾM..."> </p>
+                </div>
+            </div>
+               </form>
+               <!--Phần những chuyến đi tốt nhất-->
+            <div class="main__container-1__item2"> 
+                <div class="main__container-1__item2__content"> 
+                <h1>Chúng tôi có những chuyến đi tốt nhất
+                </h1>
+                <p><i>Khám phá những thành phố & các điểm tham quan hàng đầu ở Việt Nam! Vui chơi thả ga ở Hà Nội hoặc khám phá nhiều địa điểm du lịch nổi tiếng như Vịnh Hạ Long</i></p>
+                    <div class='main__container-1__item2__content__img'>
+                        <!--main__container-1__item2__content__img__item chứa thành phần gói du lịch (Đà lạt,Phú Quốc, Hà Nội)-->
+                        <div class="main__container-1__item2__content__img__item">
+                            <!--Hình ảnh Đà lạt-->
+                            <img src="../assets/images/phobiendalat.jpg" alt="">
+                                 <!--Ngày tháng mở tour-->
+                                <div class="main__container-1__item2__content__img__item__date">
+                                    <p>15 tháng 02 - 01 tháng 03</p>
+                            </div>
+                              <!--Tên , Giá , Đánh giá-->
+                            <div class="main__container-1__item2__content__img__item__info">
+                                <h1>Đà Lạt</h1>
+                                <p>Từ 3.000.000đ</p>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                                    <!--Nút xem thêm-->
+                                <div class="main__container-1__item2__content__img__item__info__button">
+                                    <p><a href="#">Xem thêm...</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__container-1__item2__content__img__item">
+                               <!--Hình ảnh Phú Quốc-->
+                            <img src="../assets/images/phuquoc`.jpg" alt="">
+                                 <!--Ngày tháng mở tour-->
+                                <div class="main__container-1__item2__content__img__item__date">
+                                    <p>15 tháng 02 - 01 tháng 03</p>  
+                            </div>
+                                  <!--Tên , Giá , Đánh giá-->
+                            <div class="main__container-1__item2__content__img__item__info">
+                                <h1>Phú Quốc</h1>
+                                <p>Từ 5.000.000đ</p>
+                                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                            <div class="main__container-1__item2__content__img__item__info__button">
+                                          <!--Nút xem thêm-->
+                                        <p><a href="#">Xem thêm...</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__container-1__item2__content__img__item">
+                              <!--Hình ảnh Hà Nội-->
+                            <img src="../assets/images/hanoi.jpg" alt="">
+                                  <!--Ngày tháng mở tour-->
+                        <div class="main__container-1__item2__content__img__item__date">
+                            <p>15 tháng 02 - 01 tháng 03</p>
+                        </div>
+                             <!--Tên , Giá , Đánh giá-->
+                        <div class="main__container-1__item2__content__img__item__info">
+                            <h1>Hà Nội</h1>
+                            <p>Từ $4.550.000đ</p>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                        <div class="main__container-1__item2__content__img__item__info__button">
+                            <!--Nút xem thêm-->
+                            <p><a href="#">Xem thêm...</a></p>>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!--main_container-2 nội dung của gối khuyến mãi mùa đông -->
+        <div class="main__container-2">
+            <div class="main__container-2__item">
+                <h1>GÓI KHUYẾN MÃI MÙA ĐÔNG</h1>
+                    <!--Đánh Giá-->
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                        <!--Nôi dung-->
+                <p>Tour Du lịch Hà Nội - Yên Tử - Hạ Long - Tràng An - Sa Pa từ Sài Gòn. Miền Bắc là nơi khởi nguồn văn hóa ngàn năm văn hiến của dân tộc Việt Nam.
+                    Du lịch miền Bắc du khách sẽ được khám phá những thắng cảnh thiên nhiên đẹp mê hồn cùng nhiều công trình kiến trúc ấn tượng được tạo nên bởi bàn tay khéo léo của con người... Cùng Du Lịch Việt khám phá những địa điểm du lịch miền bắc hấp dẫn nhất như Hà Nội - Yên Tử - Hạ Long - Chùa Bái Đính - Tràng An - Sapa - Bản Cát Cát - Đỉnh Fansipan,... để bắt đầu lên kế hoạch cho chuyến du lịch ngay nhé!   
+                </p>
+                <div class="main__container-2__item__book">
+                        <!--Nút đặt hàng-->
+                        <p><a href="#">Đặt ngay...</a></p>
+                </div>
+            </div>
+        </div>
+         <!--main__container-3 chứa nội dung của các gói ưu đãi tốt nhất có phòng -->
+        <h1>ƯU ĐÃI TỐT NHẤT CÓ PHÒNG</h1>
+        <div class="main__container-3">        
+        <div class="main__container-3__item">
+                <div class="main__container-3__item__img">
+                      <!--Hình ảnh Sapa-->
+                    <img src="../assets/images/sapa1.jpg" alt="">
+                </div>
+                  <!--Nội dung:Giá , đánh giá , mô tả-->
+                <div class="main__container-3__item__content">
+                      <!--Giá-->
+                    <p>1.100.000đ <span>1 đêm</span></p>
+                      <!--Đánh giá-->
+                    <p><i class="fas fa-star"></i>&nbsp<i class="fas fa-star"></i>&nbsp<i class="fas fa-star"></i>&nbsp<i class="fas fa-star"></i>&nbsp<i class="far fa-star"></i></p>
+                      <!--Mô tả-->
+                    <p>Vùng núi Tây Bắc Việt Nam nổi tiếng với núi non hùng vĩ, cảnh đẹp nên thơ. Sapa - một trong những điểm du lịch hấp dẫn của Tây Bắc.  </p>
+                    <p><i class="fas fa-map-signs"></i>&nbsp &nbsp &nbsp<i class="fas fa-stopwatch"></i>&nbsp &nbsp &nbsp<i class="fas fa-bicycle"></i>&nbsp &nbsp &nbsp<i class="fas fa-anchor"></i></p>
+                      <!--Đọc thêm-->
+                      <p><a href="#">Đọc thêm...</a></p>
+                </div>
+            </div>
+        <div class="main__container-3__item">
+        <div class="main__container-3__item__img">
+                        <!--Hình ảnh Vĩnh hạ long-->
+            <img src="../assets/images/vhl.jpg" alt="">
+        </div>
+                  <!--Nội dung:Giá , đánh giá , mô tả-->
+        <div class="main__container-3__item__content">
+                          <!--Giá-->
+                    <p>2.000.000đ <span>1 đêm</span></p>
+                      <!--Đánh giá-->
+                    <p><i class="fas fa-star"></i>&nbsp<i class="fas fa-star"></i>&nbsp<i class="fas fa-star"></i>&nbsp<i class="fas fa-star"></i>&nbsp<i class="far fa-star"></i></p>
+                       <!--Mô tả-->
+                    <p>Vịnh Hạ Long một trong Bảy kỳ quan thiên nhiên thế giới mới, và được Thế giới công nhận là di sản thiên nhiên thế giới.</p>
+                    <p><i class="fas fa-map-signs"></i>&nbsp &nbsp &nbsp<i class="fas fa-stopwatch"></i>&nbsp &nbsp &nbsp<i class="fas fa-bicycle"></i>&nbsp &nbsp &nbsp<i class="fas fa-anchor"></i></p>
+                     <!--Đọc thêm-->
+                     <p><a href="#">Đọc thêm...</a></p>
+                </div>
+            </div>
+        <div class="main__container-3__item">
+            <div class="main__container-3__item__img">
+                     <!--Hình ảnh núi Langbia Đà Lạt-->
+                <img src="../assets/images/langbiang.jpg" alt="">
+            </div>
+                <!--Nội dung:Giá , đánh giá , mô tả-->
+            <div class="main__container-3__item__content">
+                      <!--Giá-->
+                <p>1.000.000đ <span>1 đêm</span></p>
+                         <!--Đánh giá-->
+                <p><i class="fas fa-star"></i>&nbsp<i class="fas fa-star"></i>&nbsp<i class="fas fa-star"></i>&nbsp<i class="fas fa-star"></i>&nbsp<i class="far fa-star"></i></p>
+                       <!--Mô tả-->
+                <p>Được ví như trái tim của Đà Lạt, núi Langbiang nổi tiếng với loại hình dã ngoại, khám phá thiên nhiên, thu hút các bạn trẻ mê phượt và những nhà mạo hiểm.</p>
+                <p><i class="fas fa-map-signs"></i>&nbsp &nbsp &nbsp<i class="fas fa-stopwatch"></i>&nbsp &nbsp &nbsp<i class="fas fa-bicycle"></i>&nbsp &nbsp &nbsp<i class="fas fa-anchor"></i></p>
+                     <!--Đọc thêm-->
+                <p><a href="#">Đọc thêm...</a></p>
+            </div>
+        </div>
+        <div class="main__container-3__item">
+            <div class="main__container-3__item__img">
+                      <!--Hình ảnh Hội An-->
+                <img src="../assets/images/hoian1.jpg" alt="">
+            </div>
+                  <!--Nội dung:Giá , đánh giá , mô tả-->
+            <div class="main__container-3__item__content">
+                      <!--Giá-->
+                <p>1.000.000đ <span>1 đêm</span></p>
+                          <!--Đánh giá-->
+                <p><i class="fas fa-star"></i>&nbsp<i class="fas fa-star"></i>&nbsp<i class="fas fa-star"></i>&nbsp<i class="fas fa-star"></i>&nbsp<i class="far fa-star"></i></p>
+                          <!--Mô tả-->
+                <p>Phố cổ Hội An là một thành phố nổi tiếng của tỉnh Quảng Nam với hơn 1000 di tích kiến trúc từ phố xá, nhà cửa, hội quán, đình, chùa, miếu, nhà thờ tộc, giếng cổ… </p>
+                <p><i class="fas fa-map-signs"></i>&nbsp &nbsp &nbsp<i class="fas fa-stopwatch"></i>&nbsp &nbsp &nbsp<i class="fas fa-bicycle"></i>&nbsp &nbsp &nbsp<i class="fas fa-anchor"></i></p>
+                      <!--Đọc thêm-->
+                    <p><a href="#">Đọc thêm...</a></p>
+            </div>
+        </div>
+    </div
+         <!-- main__container-4 chứa phần nội dung phản hồi của khách hàng -->
+        <h1 class="main__title-2">PHẢN HỒI CỦA KHÁCH HÀNG</h1>
+        <div class="main__container-4">
+            <div class="main__container-4__item">
+                  <!--Nội dung phản hồi của Sơn Tùng MTP-->
+                <div class="main__container-4__item__img">
+                      <!--Hình ảnh Sơn Tùng-->
+                    <img src="../assets/images/danh_gia_3.jpg" alt="">
+                        <!--Logo bali-->
+                    <div  class="main__container-4__item__img__logo">
+                        <i class="fas fa-suitcase-rolling"></i>
+                    </div>
+                        <!--Tên và ngày bình luận của khách hàng--> 
+                    <div  class="main__container-4__item__img__date">
+                        <p>Huỳnh Đức</p>
+                        <p>29/02/2021</p>
+                    </div>
+                        <!--khung tím chứa nội dung văn bản phản hồi-->
+                    <div  class="main__container-4__item__img__frame">
+                       
+                    </div>
+                        <!--Nội dung văn bản phản hồi của khách hàng-->
+                    <div  class="main__container-4__item__img__desc">
+                            <h1>"Dịch Vụ Tuyệt Vời"
+                              </h1>
+                        <p> Mình rất thích những trãi nghiệm mà dịch vụ đã mang lại...</p>
+                    </div>
+                </div>
+            </div>
+            <div  class="main__container-4__item">
+                      <!--Nội dung phản hồi của Shark Khoa-->
+                <div class="main__container-4__item__img">
+                       <!--Hình ảnh Shark Khoa-->
+                    <img src="../assets/images/danh_gia_2.jpg" alt="">
+                         <!--Logo bali-->
+                    <div  class="main__container-4__item__img__logo">
+                        <i class="fas fa-suitcase-rolling"></i>
+                    </div>
+                              <!--Tên và ngày bình luận của khách hàng--> 
+                    <div  class="main__container-4__item__img__date">
+                        <p>Vi</p>
+                        <p> 30/4/2021</p>
+                    </div>
+                      <!--khung tím chứa nội dung văn bản phản hồi-->
+                    <div  class="main__container-4__item__img__frame">
+                       
+                    </div>
+                      <!--Nội dung văn bản phản hồi của khách hàng-->
+                    <div  class="main__container-4__item__img__desc">
+                            <h1>" rất rất tuyệt vời "
+                              </h1>
+                        <p> Du lịch là một phần không thể thiếu trong cuộc sống của tôi và tôi rất rất thích dịch vụ mà Trip cung cấp, rất rất tuyệt vời! </p>
+                    </div>
+                </div>
+            </div>
+            <div  class="main__container-4__item">
+                      <!--Nội dung phản hồi của Warrent Buffett-->
+                <div class="main__container-4__item__img">
+                         <!--Hình ảnh Warrent-->
+                    <img src="../assets/images/danh_gia.jpg" alt="">
+                           <!--Logo bali-->
+                    <div  class="main__container-4__item__img__logo">
+                        <i class="fas fa-suitcase-rolling"></i>
+                    </div>
+                     <!--Tên và ngày bình luận của khách hàng--> 
+                    <div  class="main__container-4__item__img__date">
+                        <p>Toàn Hồ</p>
+                        <p>10/04/2021</p>
+                    </div>
+                        <!--khung tím chứa nội dung văn bản phản hồi-->
+                    <div  class="main__container-4__item__img__frame"> 
+                    </div>
+                       <!--Nội dung văn bản phản hồi của khách hàng-->
+                    <div  class="main__container-4__item__img__desc">
+                            <h1>"Đáng trải nghiệm "
+                              </h1>
+                        <p>“Gia đình tôi rất hài lòng về chuyến đi này và sẽ tiếp tục sử dụng dịch vụ Du Lịch Việt trong các chuyến du lịch sau…”!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!--main__container-5 chứa phần thịnh hanh năm nay-->
+        <h1 class="main__title-3">THỊNH HÀNH NĂM NAY</h1>
+        <div class="main__container-5">
+                 <!--Nội dung tour Đà Lạt-->
+                <div class="main__container-5__item">
+                    <div class="main__container-5__item__img">
+                           <!--Hình ảnh Đà Lạt-->
+                        <img src="../assets/images/dalat.jpg" alt="" id="anh1">
+                    </div>
+                       <!--Tên , Giá cả ,địa điểm check in-->
+                    <div class="main__container-5__item__desc">
+                        <p>Đà Lạt</p>
+                        <p>3.000.000đ</p>
+                        <p>Quảng Trường Lam Viên</p>
+                    </div>
+                </div>
+                  <!--Nội dung tour Vĩnh Hạ Long-->
+                <div class="main__container-5__item">
+                    <div class="main__container-5__item__img">
+                            <!--Hình ảnh Vĩnh Hạ Long-->
+                        <img src="../assets/images/vhl2.jpg" alt="">
+                    </div>
+                        <!--Tên , Giá cả ,địa điểm check in-->
+                    <div class="main__container-5__item__desc">
+                        <p>Vịnh Hạ Long</p>
+                        <p>6.000.000đ</p>
+                        <p>Vĩnh Hạ Long, Việt Nam</p>
+                    </div>
+                </div>
+                  <!--Nội dung tour Vũng Tàu-->
+                <div class="main__container-5__item">
+                    <div class="main__container-5__item__img">
+                          <!--HÌnh ảnh Vũng Tàu-->
+                        <img src="../assets/images/bien.jpg" alt="">
+                    </div>
+                        <!--Tên , Giá cả ,địa điểm check in-->
+                    <div class="main__container-5__item__desc">
+                        <p>Vũng Tàu</p>
+                        <p>2.000.000đ</p>
+                        <p>Biển Long Hải</p>
+                    </div>
+                </div>
+                <div class="main__container-5__item">
+                            <!--Nội dung tour SAPA-->
+                    <div class="main__container-5__item__img">
+                            <!--Hình ảnh đỉnh Phanxibăng-->
+                        <img src="../assets/images/fanxubang.jpg" alt="">
+                    </div>
+                        <!--Tên , Giá cả ,địa điểm check in-->
+                    <div class="main__container-5__item__desc">
+                        <p>SAPA</p>
+                        <p>5.000.000đ</p>
+                        <p>Đỉnh Phanxibăng</p>
+                    </div>
+                </div>
+                <div class="main__container-5__item">
+                     <!--Nội dung tour Phú Quốc-->
+                    <div class="main__container-5__item__img">
+                          <!--Hình ảnh Phú Quốc-->
+                        <img src="../assets/images/phuquoc.jpg" alt="">
+                    </div>
+                        <!--Tên , Giá cả ,địa điểm check in-->
+                    <div class="main__container-5__item__desc">
+                        <p>Phú Quốc</p>
+                        <p>7.000.000đ</p>
+                        <p>đảo Phú Quốc, Kiên Giang</p>
+                    </div>
+                </div>
+                <div class="main__container-5__item">
+                      <!--Nội dung tour Đà Nẵng-->
+                    <div class="main__container-5__item__img">
+                           <!--Hình ảnh Mỹ Khuê Đà Nẵng-->
+                        <img src="../assets/images/mykhuedanang.jpg" alt="">
+                    </div>
+                        <!--Tên , Giá cả ,địa điểm check in-->
+                    <div class="main__container-5__item__desc">
+                        <p>Đà Nẵng</p>
+                        <p>4.000.000đ</p>
+                        <p>Bãi Biển Mỹ Khê</p>
+                    </div>
+                </div>
+                <div class="main__container-5__item">
+                      <!--Nội dung tour Hà Nội-->
+                 <div class="main__container-5__item__img">
+                        <!--Hình ảnh Hồ Gươm Hà Nội-->
+                    <img src="../assets/images/hoguom.jpg" alt="">
+                    </div>
+                        <!--Tên , Giá cả ,địa điểm check in-->
+                    <div class="main__container-5__item__desc">
+                    <p>Hà Nội</p>
+                    <p>9.000.000đ</p>
+                    <p>Hồ Gươm Hà Nội</p>
+                    </div>
+                </div>
+                <div class="main__container-5__item">
+                       <!--Nội dung tour Hôi An-->
+                    <div class="main__container-5__item__img">
+                          <!--Hình ảnh Hội An-->
+                        <img src="../assets/images/hoian.jpg" alt="">
+                    </div>
+                       <!--Tên , Giá cả ,địa điểm check in-->
+                    <div class="main__container-5__item__desc">
+                        <p>Hội An</p>
+                        <p>5.500.000đ</p>
+                        <p>Phố Cổ Hội An</p>
+                    </div>
+                </div>
+            </div>
+               <!--main__container-6 chứa form liên lạc-->
+            <div class="main__container-6">
+                    <form action="" class="main__container-6__form"> 
+                        <table>
+                            <tr>
+                                <td colspan="2"> <h1 class="main__container-6__form__table__h">LIÊN LẠC</h1></td>
+                            </tr>
+                            <tr>
+                                  <!--Nhập tên-->
+                                <td ><input type="text"  class="main__container-6__form__table__name" placeholder="Tên" required></td>
+                                    <!--Nhập email-->
+                                <td  ><input type="email" class="main__container-6__form__table__email" placeholder="Email" required ></td>
+                            </tr>
+                            <tr>
+                                    <!--Chủ đề-->
+                                <td colspan="2" ><input type="text"  class="main__container-6__form__table__sub" placeholder="Chủ đề" required></td>
+                            </tr>
+                            <tr>
+                                    <!--Nội dung liên lạc-->
+                                <td colspan="2"><textarea name="" id="" cols="60" rows="10" class="main__container-6__form__table___desc" ></textarea></td>
+                               
+                            </tr>
+                            <tr>
+                                <td>
+                                        <!--Submit-->
+                                    <div><input type="submit" value="GỬI THÔNG TIN ..."  class="main__container-6__form__table__submit"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </main>
+            <footer class="footer"></footer>
+            <script src="../layout/header.js"></script>
+            <script src="../layout/footer.js"></script>
+            <script src="../assets/js/main.js " type="text/javascript "></script>
+            <script src="../assets/js/trangchu.js"></script>
+            <script src="../assets/js/form.js"></script>
+        </body>
+</html>

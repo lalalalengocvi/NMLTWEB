@@ -1,0 +1,425 @@
+<!--File: dichvu.html
+student: LE NGOC VI , VIB1906610@student.ctu.edu.vn-->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Dịch Vụ</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/dichvu.css">
+    
+</head>
+
+<body>
+    <!--Phần đầu-->
+    <header class="header"></header>
+    <div class="home">
+        <div class="home__background"></div>
+            <div class="home__title">
+                 <h1>Dịch vụ</h1>
+            </div>
+        </div>
+
+    <!--Tìm kiếm-->
+    <div class="search">
+        <div class="grid wide">
+            <div class="search__container__tabs grid wide">
+                <div class="row">
+                    <div class="search__container__tab d-flex active">
+                        <img src="../assets/images/hotel.png" alt="">
+                        <span>Khách sạn</span>
+                    </div>
+
+                    <div class="search__container__tab d-flex">
+                        <img src="../assets/images/car.png" alt="">
+                        <span>Dịch vụ thuê xe</span>
+                    </div>
+                    
+                    <div class="search__container__tab d-flex">
+                        <img src="../assets/images/fly.png" alt="">
+                        <span>Chuyến bay</span> 
+                    </div>
+
+                    <div class="search__container__tab d-flex">
+                        <img src="../assets/images/slipper.png" alt="">
+                        <span>Lịch trình</span>
+                    </div>
+
+                    <div class="search__container__tab d-flex">
+                        <img src="../assets/images/boat.png" alt="">
+                        <span>Du lịch trên biển</span>
+                    </div>
+                    
+                    <div class="search__container__tab d-flex">
+                        <img src="../assets/images/camp.png" alt="">
+                        <span>Hoạt động</span>
+                    </div>
+                </div>
+            </div>
+    <!--Chọn-->       
+    <form action="" class="search__form">
+             <div class="search__container">
+                <div class="row">
+                    <div class="search__container--item l-4 m-6 c-12">
+                        <div>
+                            <span>Bạn muốn đến nơi đâu?</span>
+                        </div>
+                        <input type="text" placeholder="Nhập điểm đến..." required> 
+                    </div>
+    <!--Ngày đến-->              
+                    <div class="search__container--item l-3  m-6 c-12">
+                        <div>
+                            <span>Thời gian đến</span>
+                        </div>
+                        <input type="date">
+                    </span>
+                    </div>
+    <!--Thời gian-->                
+                    <div class="search__container--item l-3  m-6 c-12">
+                        <div>
+                            <span>Thời gian đi</span>
+                        </div>
+                        <input type="date">
+                    </div>   
+    <!--Khoảng giá-->               
+    <div class="search__container--item l-1 m-3 c-6">
+        <div>
+            <span>Số lượng</span>
+        </div>
+        <select name="" id="">
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>Khác</option>
+        </select>
+    </div>
+    <!--Lựa chọn thêm nội dung tìm kiếm-->  
+        <div class="l-12 m-12 c-12">
+        <div class="search__container__extras"> 
+            <div class="row">
+                <div class="search__container__extras--item">
+                    <input type="checkbox" name="#" id="#">
+                    <label for="#">Gần biển</label>
+                </div>
+                <div class="search__container__extras--item">
+                    <input type="checkbox" name="#" id="#">
+                    <label for="#">Cho thuê xe </label>
+                </div>
+                <div class="search__container__extras--item">
+                    <input type="checkbox" name="#" id="#">
+                    <label for="#">Gần trung tâm thành phố</label>
+                </div>
+                <div class="search__container__extras--item">
+                    <input type="checkbox" name="#" id="#">
+                    <label for="#">Có bể bơi riêng</label>
+                </div>
+                <div class="search__container__extras--item">
+                    <input type="checkbox" name="#" id="#">
+                    <label for="#">Dịch vụ chăm sóc thú cưng</label>
+                </div>
+                <div class="search__container__extras--item">
+                    <input type="checkbox" name="#" id="#">
+                    <label for="#">Khu vực vui chơi cho bé</label>
+                </div>
+                <div class="search__container__extras--item">
+                    <input type="checkbox" name="#" id="#">
+                    <label for="#">Villa</label>
+                </div>
+                <div class="search__container__extras--item">
+                    <input type="checkbox" name="#" id="#">
+                    <label for="#">Có khu vực hút thuốc</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Nút tìm kiếm-->  
+    <div class="search__container--btn l-2 m-4 m-o-7 c-4 c-o-7">
+                <input type="submit" value="TÌM KIẾM...">
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--Các dịch vụ khác-->
+    <div class="offers">
+        <div class="offers__container">
+            <div class="grid wide custom">
+                <div class="row">
+                </div>
+                <!--Tham khảo tại: https://www.booking.com/ -->
+                <div class="row offers__container__items">
+                    <div class="col l-12 m-12 c-12 s-12">
+                        <div class="offer__container__item">
+                            <div class="row">
+                                <div class="col l-4 m-6 c-12 s-12">
+                                    <div class="offer__item__img--container">
+                                        <div class="offer__item__img" style="background-image:url(../assets/images/Movenpick-Waverly.jpg)"></div>
+                                        <div class="offer__container__item-name">
+                                            <a href="#">Movenpick</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-8 m-6 c-12 s-12">
+                                    <div class="offer__container__item--content">
+                                        <div class="offer__container__item__review">
+                                            <div class="offer__container__item__review--text">
+                                                <h3>Very good</h3>
+                                                <span>2000 reviews</span>
+                                            </div>
+                                            <span>4.4</span>
+                                        </div>
+                                        <div class="offers__item__price">
+                                            1.200.000VND
+                                            <span>Mỗi đêm</span>
+                                        </div>
+                                        <div class="item_rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>Tọa lạc tại đảo Phú Quốc, cách Bãi biển Cửa Cạn 1,3 km, Movenpick Resort Waverly Phu Quoc cung cấp chỗ nghỉ với nhà hàng,
+                                            chỗ đỗ xe riêng miễn phí, hồ bơi ngoài trời và trung tâm thể dục. Chỗ nghỉ này còn có quán bar, phòng khách chung và vườn.
+                                            Chỗ nghỉ cũng cung cấp dịch vụ lễ tân 24 giờ, dịch vụ phòng và dịch vụ thu đổi ngoại tệ cho khách.</p>
+                                        <div class="offer__item--icon">
+                                            <img src="../assets/images/guide.png" alt="">
+                                            <img src="../assets/images/compass.png" alt="">
+                                            <img src="../assets/images/slipper.png" alt="">
+                                            <img src="../assets/images/boatship.png" alt="">
+                                        </div>
+                                        <div class="offers__btn">
+                                            <a href="#!">Đặt phòng ngay</a>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12 s-12">
+                        <div class="offer__container__item">
+                            <div class="row">
+                                <div class="col l-4 m-6 c-12 s-12">
+                                    <div class="offer__item__img--container">
+                                        <div class="offer__item__img" style="background-image:url(..//assets/images/vinpearl-resort-1.jpg)"></div>
+                                        <div class="offer__container__item-name">
+                                            <a href="#">Vinpearl Resort & Spa Phú Quốc</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-8 m-6 c-12 s-12">
+                                    <div class="offer__container__item--content">
+                                        <div class="offer__container__item__review">
+                                            <div class="offer__container__item__review--text">
+                                                <h3>Very good</h3>
+                                                <span>3220 reviews</span>
+                                            </div>
+                                            <span>4.6</span>
+                                        </div>
+                                        <div class="offers__item__price">
+                                            2.500.000VND
+                                            <span>Mỗi đêm</span>
+                                        </div>
+                                        <div class="item_rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>Vinpearl Resort & Spa Phu Quoc cung cấp chỗ nghỉ hiện đại và sang trọng với WiFi miễn phí trong toàn bộ khuôn viên và có hồ bơi
+                                            ngoài trời cũng như khu vực bãi biển riêng. Chỗ nghỉ này có lễ tân 24 giờ, dịch vụ văn phòng và tiện nghi tổ chức tiệc 
+                                            hội họp. Tọa lạc tại vị trí chiến lược, resort này nằm cách Suối Tranh 47 km và Làng chài Hàm Ninh 37 km. Sân bay quốc tế Phú Quốc cách resort 33 km lái xe.</p>
+                                        <div class="offer__item--icon">
+                                            <img src="../assets/images/guide.png" alt="">
+                                            <img src="../assets/images/compass.png" alt="">
+                                            <img src="../assets/images/slipper.png" alt="">
+                                            <img src="../assets/images/boatship.png" alt="">
+                                        </div>
+                                        <div class="offers__btn">
+                                            <a href="#!">Đặt phòng ngay</a>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                        <div class="offer__container__item">
+                            <div class="row">
+                                <div class="col l-4 m-6 c-12 s-12">
+                                    <div class="offer__item__img--container">
+                                        <div class="offer__item__img" style="background-image:url(../assets/images/Jm\ marvel\ hotel.jpg)"></div>
+                                        <div class="offer__container__item-name">
+                                            <a href="#">JM Marvel Hotel & Spa</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-8 m-6 c-12 s-12">
+                                    <div class="offer__container__item--content">
+                                        <div class="offer__container__item__review">
+                                            <div class="offer__container__item__review--text">
+                                                <h3>Very good</h3>
+                                                <span>329 reviews</span>
+                                            </div>
+                                            <span>4.7</span>
+                                        </div>
+                                        <div class="offers__item__price">
+                                            500.000VND
+                                            <span>Mỗi đêm</span>
+                                        </div>
+                                        <div class="item_rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>Tọa lạc tại vị trí tuyệt đẹp ở quận Hoàn Kiếm thuộc thành phố Hà Nội, JM Marvel Hotel & Spa nằm cách Nhà hát múa rối nước Thăng Long chưa đầy 1 km,
+                                            Nhà Thờ Lớn 12 phút đi bộ và Chợ Đồng Xuân 1,2 km. Trong số các tiện nghi của khách sạn này có nhà hàng, lễ tân 24 giờ, bàn đặt tour và Wi-Fi miễn phí. Khách sạn cung cấp các phòng gia đình.</p>
+                                        <div class="offer__item--icon">
+                                            <img src="../assets/images/guide.png" alt="">
+                                            <img src="../assets/images/compass.png" alt="">
+                                            <img src="../assets/images/slipper.png" alt="">
+                                            <img src="../assets/images/boatship.png" alt="">
+                                        </div>
+                                        <div class="offers__btn">
+                                            <a href="#!">Đặt phòng ngay</a>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                        <div class="offer__container__item">
+                            <div class="row">
+                                <div class="col l-4 m-6 c-12 s-12">
+                                    <div class="offer__item__img--container">
+                                        <div class="offer__item__img" style="background-image:url(../assets/images/muong_thanh_ct.jpg)"></div>
+                                        <div class="offer__container__item-name">
+                                            <a href="#">Muong Thanh Luxury Can Tho Hotel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-8 m-6 c-12 s-12">
+                                    <div class="offer__container__item--content">
+                                        <div class="offer__container__item__review">
+                                            <div class="offer__container__item__review--text">
+                                                <h3>Very good</h3>
+                                                <span>783 reviews</span>
+                                            </div>
+                                            <span>4.3</span>
+                                        </div>
+                                        <div class="offers__item__price">
+                                            990.000VND
+                                            <span>Mỗi đêm</span>
+                                        </div>
+                                        <div class="item_rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>Muong Thanh Luxury Can Tho Hotel cung cấp chỗ nghỉ tại thành phố Cần Thơ và có Wi-Fi miễn phí, trung tâm spa cũng như hồ bơi ngoài trời và quầy bar trong khuôn viên.
+                                        Muong Thanh Luxury Can Tho Hotel nằm trong bán kính 1,2 km từ Bến Ninh Kiều và 7 km từ Chợ nổi Cái Răng. Sân bay gần nhất là Sân bay Cần Thơ, cách khách sạn 13 km.
+                                        </p>
+                                        <div class="offer__item--icon">
+                                            <img src="../assets/images/guide.png" alt="">
+                                            <img src="../assets/images/compass.png" alt="">
+                                            <img src="../assets/images/slipper.png" alt="">
+                                            <img src="../assets/images/boatship.png" alt="">
+                                        </div>
+                                        <div class="offers__btn">
+                                            <a href="#!">Đặt phòng ngay</a>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                        <div class="offer__container__item">
+                            <div class="row">
+                                <div class="col l-4 m-6 c-12 s-12">
+                                    <div class="offer__item__img--container">
+                                        <div class="offer__item__img" style="background-image:url(../assets/images/Azerai\ Can\ Tho.jpg)"></div>
+                                        <div class="offer__container__item-name">
+                                            <a href="#">Azerai Can Tho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-8 m-6 c-12 s-12">
+                                    <div class="offer__container__item--content">
+                                        <div class="offer__container__item__review">
+                                            <div class="offer__container__item__review--text">
+                                                <h3>Very good</h3>
+                                                <span>499 reviews</span>
+                                            </div>
+                                            <span>4.7</span>
+                                        </div>
+                                        <div class="offers__item__price">
+                                            5.000.000VND
+                                            <span>Mỗi đêm</span>
+                                        </div>
+                                        <div class="item_rating"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>Nằm cách Bến Ninh Kiều 1,5 km và trung tâm thành phố 2,5 km, Azerai Can Tho cung cấp các phòng lắp máy điều hòa với Wi-Fi miễn phí trong toàn khuôn viên tại thành phố Cần Thơ. Chỗ nghỉ còn có lễ tân làm việc 24 giờ và phòng giữ hành lý cho khách.</p>
+                                        <div class="offer__item--icon">
+                                            <img src="../assets/images/guide.png" alt="">
+                                            <img src="../assets/images/compass.png" alt="">
+                                            <img src="../assets/images/slipper.png" alt="">
+                                            <img src="../assets/images/boatship.png" alt="">
+                                        </div>
+                                        <div class="offers__btn">
+                                            <a href="#!">Đặt phòng ngay</a>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../layout/header.js"></script>
+    <script src="../assets/js/offer.js"></script>
+    
+    <script src="../layout/footer.js"></script>
+    <script src="../assets/js/main.js " type="text/javascript "></script>
+</body>
+
+</html>

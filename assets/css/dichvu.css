@@ -1,0 +1,224 @@
+/* File: gioithieu.css
+student: LÊ NGOC VI, vib1906610@student.ctu.edu.vn */
+
+.home__title {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home__title h1 {
+    font-size: 72px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+
+.home {
+    height: 100%;
+}
+
+.home__background {
+    background: url(../images/maldives.JPG);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.search__container {
+    height: 320px;
+    padding: 25px 0;
+}
+
+.search__container .row {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.search__container__extras { /*tìm kiếm bổ sung vùng chứa */
+    margin-top: 35px;
+}
+
+.search__container__extras input[type="checkbox"] {   /*bổ sung vào vùng chứa tìm kiếm */
+    width: 18px;
+    height: 18px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.search__container__extras input[type="checkbox"]:checked::after {
+    display: block;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    content: "";
+    background: rgb(250, 158, 27);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2px;
+}
+
+.search__container__extras label {    /*Nút của vùng tìm kiếm */
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 45px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.search__container__extras--item { /*mục bổ sung của vùng tìm kiếm thêm */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+    padding: 10px 5px;
+    width: 40;
+}
+/*Các dịch vụ khác */
+.offers__container {
+    background: #fff;
+}
+
+
+.offer__container__item { /*Hình ảnh minh họa */
+    margin-top: 50px;
+}
+
+.offer__container__item__review { /*Hình ảnh giới thiệu cho địa điểm */
+    position: absolute;
+    right: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.offer__container__item__review--text h3 { /* */
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.offer__container__item__review--text span {
+    font-weight: 600;
+}
+
+.offer__container__item__review>span {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    background-color: #FFA500;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: default;
+}
+/*Nút đặt phòng */
+.offers__btn {
+    height: 50px;
+    width: 200px;
+    background: linear-gradient(to right, #FF1493, #FFA500, #0BFFF7);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    line-height: 50px;
+    transition: all .3s ease-in-out;
+    margin-top: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+.offers__btn:hover {
+    opacity: .8;
+}
+
+.offers__btn a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+.offers__btn a:hover {
+    color:#fff;
+}
+
+.offers__btn span {
+    display: inline-block;
+    vertical-align: middle; /*Căn giữa nút dựa theo chiều cao của thuộc tính */
+    width: 5.75px;
+    height: 5.63px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.offers__btn span:nth-child(3) { /* */
+    opacity: .6;
+    margin-left: 0;
+}
+
+.offers__btn span:last-child { /* */
+    opacity: .4;
+    margin-left: 0;
+    margin-right: 0;
+}
+/*Desktop */
+@media (max-width: 1023px) {
+    .search {
+        padding: 60px 0;
+    }
+    .search__container {
+        height: 485px;
+        padding: 0;
+    }
+    .search__container__extras .row {
+        justify-content: flex-start; /* luôn là giá trị mặc định */
+    }
+    .search__container__extras--item {
+        width: 33.33333%;
+    }
+}
+/*Máy tính bảng */
+@media (max-width: 740px) {
+    .search__container {
+        height: 670px;
+    }
+    .search__container__extras {
+        padding: 0 10px;
+    }
+    .search__container__extras--item {
+        width: 50%;
+    }
+    .search__container--btn {
+        height: 45px;
+    }
+    .search__container--btn {
+        line-height: 45px;
+    }
+    
+    .offer__item__img--container {
+        height: calc((100vw - 30px) / 0.974);
+    }
+    .offer__container__item--content {
+        margin-top: 20px;
+    }
+}
+/*Điện thoại */
+@media (max-width: 479px) {
+    .home__title h1 {
+        font-size: 30px;
+    }
+    .search__container__extras input[type="checkbox"] {
+        width: auto;
+        height: auto;
+        appearance: auto;
+    }
+    .offer__container__item__review {
+        right: 4%;
+    }
+}

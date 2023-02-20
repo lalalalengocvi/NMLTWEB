@@ -1,0 +1,65 @@
+<!--File:dangki.html
+student: LE NGOC VI, vib1906610@student.ctu.edu.vn-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Đăng kí</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../assets/images/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="../assets/css/grid.css">
+        <link rel="stylesheet" href="../assets/css/base.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+        <link rel="stylesheet" href="../assets/css/dangki.css">
+    </head>
+    <body>
+<!--Phần đầu -->
+     <header class="header"></header>
+               <div class="home">
+			    <div class="home__background">
+		        </div> 
+<!--Phần nội dung-->
+        <div class="container">
+            <h1>Đăng kí</h1>
+            <form id="form1" action="dangki.html">
+                <div class="form-row">
+                    <label>Họ <input type="text" id="firstname" name="firstname" placeholder="Nhập họ của bạn..." required> </label>
+                    <small class="message"></small>
+                </div>
+
+                <div class="form-row">
+                    <label>Tên đệm <input type="text" id="lastname" name="lastname"placeholder="Nhập tên đệm của bạn..." required>  </label>
+                    <small class="message"></small>
+                </div>
+
+                <div class="form-row">
+                    <label>Email<input type="email" id="email" placeholder="Nhập email của bạn..." required></label>
+                    <small class="message"></small>
+                </div>
+
+				<div class="form-row">
+					<label> Mật Khẩu<input type="password" placeholder="Mật khẩu..." id="password" required></label>
+				    <small class="message"></small>
+				</div>
+
+				<div class="form-row">
+					<label>Nhập lại mật khẩu<input type="password" placeholder="Nhập lại mật khẩu..." id="confirm_password" required></label>
+				    <small class="message"></small>
+				</div>
+
+                <div class="form-row">
+                    <input type="submit" value="Đăng kí">
+                </div>
+            </form>
+        </div>
+        <footer class="footer"></footer>
+        <script src="../layout/header.js"></script>
+        <script src="../layout/footer.js"></script>
+        <script src="../assets/js/validation.js"></script>
+		<script src="../assets/js/main.js "></script>
+    </body>
+</html>

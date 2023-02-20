@@ -1,0 +1,50 @@
+<!--File:dangnhap.html
+student: LE NGOC VI, vib1906610@student.ctu.edu.vn-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Đăng nhập</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../assets/images/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="../assets/css/grid.css">
+        <link rel="stylesheet" href="../assets/css/base.css"> <!--Định danh cả trang web, header, footer-->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+        <link rel="stylesheet" href="../assets/css/dangnhap.css">
+    </head>
+    <body>
+<!--Phần đầu -->
+		<header class="header"></header>
+		    <div class="home">
+			    <div class="home__background"></div>
+		        </div>
+<!--Phần nội dung-->
+        <div class="container">
+            <h1>ĐĂNG NHẬP</h1>
+            <div class="form-row">
+                <form name="form1" method="post" action="dangnhap.html" onsubmit="return validateform(event)">
+                    <div class="form-row">
+                        <input type="text" name="email"  placeholder="Email" />
+                        <input type="password" name="password" placeholder="Mật khẩu..." />
+                    </div>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> 
+                    </div>
+                    <a href="#">Quên mật khẩu?</a>
+            <div class="form-row"> <input type="Submit" value="Đăng nhập">
+        </form>
+    </div>
+</div>
+        <footer class="footer"></footer>
+        <script src="../layout/header.js"></script>
+        <script src="../layout/footer.js"></script>
+		<script src="../assets/js/main.js "></script>
+        <script src="../assets/js/dangnhap.js "></script>
+    </body>
+</html>
